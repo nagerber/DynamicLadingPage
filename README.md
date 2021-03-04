@@ -5,6 +5,7 @@ updating navigational menu based on the amount of content that is added to the p
 
 ## Table of Contents
 * [Instructions](#instructions)
+* [Copyright](#Copyright)
 
 ## Instructions
 Open the index.html file in your browser and see what happens.
