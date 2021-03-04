@@ -1,5 +1,5 @@
 # Landing Page Project
-This is a Project i build for the the Udacity Front End Web Developer Nanodegree Program.
+This is a Project I worked on for the the Udacity Front End Web Developer Nanodegree Program.
 It requires to build a multi-section landing page, with a dynamically 
 updating navigational menu based on the amount of content that is added to the page.
 In this project i manly worked on the js file, there were only small adaptations on the css and html files.
