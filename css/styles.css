@@ -18,12 +18,11 @@ body {
     color: #fff;
 }
 
-
 /* Typeography General*/
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-size: 3em;
-    margin: 2em 1rem;
+    margin: 1em 1rem;
 }
 
 @media only screen and (min-width: 35em){
@@ -43,11 +42,28 @@ h2 {
 p {
     line-height: 1.6em;
     color: #eee;
+    font-size: 0.75em;
+}
+
+/* If Screen Is Wide Enough */
+@media(min-width: 600px){
+    p {
+        line-height: 1.6em;
+        color: #eee;
+        font-size: 1em;
+    }
 }
 
 /* ---- Layout Rules ---- */
 main {
-    margin: 10vh 1em 10vh;
+    margin: 25vh 1em 1em;
+}
+
+/* If Screen Is Wide Enough */
+@media(min-width: 600px){
+    main {
+        margin: 10vh 1em 10vh;
+    }
 }
 
 .main-hero {
@@ -58,8 +74,17 @@ main {
 section {
     position: relative;
     min-height: 80vh;
+    scroll-margin-top: 9rem; 
 }
 
+/* If Screen Is Wide Enough */
+@media(min-width: 600px){
+    section {
+        position: relative;
+        min-height: 80vh;
+        scroll-margin-top: 4rem; 
+    }
+}
 
 /* ---- Module Rules ---- */
 
@@ -71,17 +96,32 @@ section {
 }
 
 .navbar__menu li {
-    display: inline-block;
-    width: 20%;
+    display: inline;
     text-decoration: none;
 }
 
+/* If Screen Is Wide Enough */
+@media(min-width: 600px){
+    .navbar__menu li {
+        display: inline-block;
+        width: 20%;
+        text-decoration: none;
+    }
+}
+  
 .navbar__menu .menu__link {
     display: block;
-    padding: 1em;
+    padding: 0.2em;
     font-weight: bold;
     text-decoration: none;
     color: rgba(0,13,60,1);
+}
+
+/* If Screen Is Wide Enough */
+@media(min-width: 600px){
+    .navbar__menu .menu__link {
+        padding: 1em;
+    }
 }
 
 .navbar__menu .menu__link:hover {
@@ -102,14 +142,24 @@ section {
 /* Footer Styles */
 .page__footer {
     background: #F4D949;
-    padding: 3em;
+    padding: 1em;
+    margin: 0; 
+    text-align: center;
     color: #fff;
+}
+
+/* If Screen Is Wide Enough */
+@media(min-width: 600px){
+    .page__footer {
+        background: #F4D949;
+        padding: 3em;
+        color: #fff;
+    }
 }
 
 .page__footer p{
     color: rgba(0,13,60,1);
 }
-
 
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
@@ -190,7 +240,6 @@ section:nth-of-type(3n + 1) .landing__container::after {
     opacity: 0;
     transition: ease 0.5s all;
 }
-
 
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
